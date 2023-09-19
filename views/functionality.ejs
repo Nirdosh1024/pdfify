@@ -1,0 +1,45 @@
+    <div class="utilities">
+        <% if(error_msg != "") { %>
+        <%- include ("./partials/messages"); %>
+        <% } %>
+        <div class=" btns">
+            <div class="main-btn">
+            <a href="/convert">convert</a>
+            </div>
+            <div class="main-btn">
+            <a href="/thumbnail">Generate thumbnail</a>
+            </div>
+            <div class="main-btn">
+            <a href="/optimize" class="optimize">optimize</a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <%- include ("./partials/post_messages"); %>
+    </div>
+    <div class="posts">
+        <div class="watermark">
+            <h2>Add a watermark: </h2>
+            <form action="/watermark" method="post">
+                <label for="watermark">Enter the text to watermark:</label>
+                <input type="text" name="watermark" id="watermark">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="extract">
+            <h2>Extract Page No:</h2>
+            <form action="/textExtract" method="post">
+                <label for="pageno">Page Number:</label>
+                <input type="number" name="pageno" id="pageno">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="remove">
+            <h2>Remove Page No: </h2>
+            <form action="/remove" method="POST">
+                <label for="page">Page:</label>
+                <input type="number" name="page" id="page">
+                <input type="submit" value="Remove">
+            </form>
+        </div>   
+        </div>
