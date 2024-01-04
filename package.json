@@ -7,7 +7,7 @@
     "dev": "nodemon app.js"
   },
   "keywords": [],
-  "author": "Shraddha Singh",
+  "author": "Nirdosh Chauhan",
   "license": "ISC",
   "dependencies": {
     "@pdftron/pdfnet-node": "^9.4.0",
